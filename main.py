@@ -25,7 +25,6 @@ secretKey = open("secretAccessKey.txt", "r")
 AWS_PRIVATE_KEY = secretKey.read()
 s3 = boto3.resource('s3', aws_access_key_id=AWS_ACCESS_KEY_ID, aws_secret_access_key=AWS_PRIVATE_KEY)
 connnectString = open("connectionString.txt", "r" )
-#connect_str = os.getenv('DefaultEndpointsProtocol=https;AccountName=cs2100320010df450ac;AccountKey=fOWNDW3JlaMljTS9wEaJb7tUTbfBJqqAnb41vOAiFMAAXCBWP8WiGODR4Y9EJewjI229FOlYxzar2hsLI8c7YA==;EndpointSuffix=core.windows.net')
 connect_str = connnectString.readline()
 
 
